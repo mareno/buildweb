@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <title>Foundry Multi-purpose HTML Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=0.9">
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{site.baseurl}}/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{site.baseurl}}/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{site.baseurl}}/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{site.baseurl}}/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{site.baseurl}}/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{site.baseurl}}/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="{{site.baseurl}}/css/common.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
     </head>
     <body>
@@ -29,13 +29,7 @@
                     </div>
                     <div class="module-group right">
                         <div class="module left">
-                            <ul class="menu">
-                                <li class="has-dropdown"><a href="{{site.baseurl}}/index.html">Home</a></li>
-                                <li class="has-dropdown"><a href="{{site.baseurl}}/html-5.html">Article</a></li>
-                                <li class="has-dropdown"><a href="#">Home</a></li>
-                                <li class="has-dropdown"><a href="#">Home</a></li>
-                                <li class="has-dropdown"><a href="#">Home</a></li>
-                            </ul>
+                            {% include nav.html navclass='nav-top' %}
                         </div>
                         <!--end of menu module-->
                         <div class="module widget-handle search-widget-handle left">
@@ -111,19 +105,22 @@
                 </div>
             </nav>
         </div>
-        {{content}}
+               <div class="main-container">
+                    {{content}}
+                </div>
+        {% include footer.html %}
         
-                <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/flexslider.min.js"></script>
-        <script src="js/lightbox.min.js"></script>
-        <script src="js/masonry.min.js"></script>
-        <script src="js/twitterfetcher.min.js"></script>
-        <script src="js/spectragram.min.js"></script>
-        <script src="js/ytplayer.min.js"></script>
-        <script src="js/countdown.min.js"></script>
-        <script src="js/smooth-scroll.min.js"></script>
-        <script src="js/parallax.js"></script>
-        <script src="js/scripts.js"></script>
+         <script src="{{site.baseurl}}/js/jquery.min.js"></script>
+        <script src="{{site.baseurl}}/js/bootstrap.min.js"></script>
+        <script src="{{site.baseurl}}/js/flexslider.min.js"></script>
+        <script src="{{site.baseurl}}/js/lightbox.min.js"></script>
+        <script src="{{site.baseurl}}/js/masonry.min.js"></script>
+        <script src="{{site.baseurl}}/js/twitterfetcher.min.js"></script>
+        <script src="{{site.baseurl}}/js/spectragram.min.js"></script>
+        <script src="{{site.baseurl}}/js/ytplayer.min.js"></script>
+        <script src="{{site.baseurl}}/js/countdown.min.js"></script>
+        <script src="{{site.baseurl}}/js/smooth-scroll.min.js"></script>
+        <script src="{{site.baseurl}}/js/parallax.js"></script>
+        <script src="{{site.baseurl}}/js/scripts.js"></script>
     </body>
 </html>
