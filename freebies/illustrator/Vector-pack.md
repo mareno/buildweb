@@ -7,7 +7,7 @@ type: illustrator
 format: Vectors
 size: 13.5 mb
 image: app3.jpg
-source: http://www.planet.com/
+source: www.planet.com
 lead: 200 flat and coloured icons
 ---
 

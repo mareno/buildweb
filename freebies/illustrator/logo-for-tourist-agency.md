@@ -7,7 +7,7 @@ type: illustrator
 format: Logo
 size: 13.5 mb
 image: app2.jpg
-source: http://www.planet.com/
+source: www.planet.com
 lead: Free PSD Icons Illustrator freebies
 ---
 
