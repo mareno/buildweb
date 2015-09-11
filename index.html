@@ -28,7 +28,7 @@ layout: default
                          {% for css in site.categories.css limit:3 %}
                         <div class="col-sm-4 post-snippet masonry-item">
                             <a href="#">
-                                <img alt="Post Image" src="img/blog-single-3.jpg" />
+                                <img alt="Post Image" src="{{site.baseurl}}/img/{{css.image}}" />
                             </a>
                             <div class="inner">
                                 <a href="#">
@@ -71,7 +71,7 @@ layout: default
                                             <h4 class="uppercase pt8"><a href="#">{{html.title}}</a></h4>
                                         </div>
                                         <div class="col-sm-4">
-                                            <h6 class="uppercase mb0">Melbourne, AU</h6>
+                                            <h6 class="uppercase mb0">{{html.author}}</h6>
                                             <span>Rod Laver Arena</span>
                                         </div>
                                     

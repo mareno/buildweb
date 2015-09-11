@@ -1,0 +1,35 @@
+<section class="projects pt48">
+                <div class="container">
+                    <div class="row pb24">
+                        <div class="col-sm-12 text-center">
+                            <ul class="filters mb0"><li data-filter="all" class="active">All</li><li data-filter="Logo" class="">Logo</li><li data-filter="Vectors" class="">Vectors</li><li data-filter="Objects" class="">Objects</li></ul>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row masonry-loader fadeOut">
+                        <div class="col-sm-12 text-center">
+                            <div class="spinner"></div>
+                        </div>
+                    </div>
+                    <div class="row masonry masonryFlyIn fadeIn" style="position: relative; height: 537px;">
+                    {% for freebies in site.pages %}
+	{% if freebies.type == include.type %}
+                        <div class="col-md-4 col-sm-6 masonry-item project fadeIn" data-filter="{{freebies.format}}" >
+                            <div class="image-tile inner-title hover-reveal text-center">
+                                <a href="{{site.baseurl}}{{freebies.url}}">
+                                    <img src="{{site.baseurl}}/img/{{freebies.image}}" alt=" Photo of {{freebies.title}}">
+                                    <div class="title">
+                                        <h5 class="uppercase mb0">{{freebies.title}}</h5>
+                                        <span>{{freebies.lead}} </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        {% endif %}
+						{% endfor %}
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+

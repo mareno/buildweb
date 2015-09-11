@@ -2,6 +2,7 @@
 layout: news-article
 title:  codepen
 meta: Opis
+author: Jekyll Smit
 date:   2015-09-10 18:07:54
 categories: html
 ---
