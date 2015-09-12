@@ -1,3 +1,39 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  /* font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: #2a3744;
+}
+
+h1,
+.h1 {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+h1.large {
+  font-size: 72px;
+  line-height: 80px;
+  font-weight: 100;
+}
+
 .bg-dark {background: #2a3744;}
 nav.bg-dark .menu > li > a,
 nav.bg-dark .module.widget-handle i,
@@ -31,4 +67,11 @@ nav.bg-dark .nav-utility {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
+}
+/*!---------- 5. SECTIONS ----------*/
+section,
+footer {
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
 }
