@@ -1,0 +1,23 @@
+Got it to work. Not sure how it will scale, but this liquid code loops through all the posts and grabs the source for the first image from a post and displays that post. I tested it with multiple images and it works as expected.
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+
+      {% assign foundImage = 0 %}
+      {% assign images = post.content | split:"<img " %}
+      {% for image in images %}
+        {% if image contains 'src' %}
+
+            {% if foundImage == 0 %}
+                {% assign html = image | split:"/>" | first %}
+                <img {{ html }} />
+                {% assign foundImage = 1 %}
+            {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
