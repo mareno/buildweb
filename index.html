@@ -26,17 +26,17 @@ layout: default
                     <div class="row masonry masonryFlyIn mb40">
                          {% for css in site.categories.css limit:3 %}
                         <div class="col-sm-4 post-snippet masonry-item">
-                            <a href="#">
+                            <a href="{{site.baseurl}}{{css.url}}">
                                 <img alt="Post Image" src="{{site.baseurl}}/img/{{css.image}}" />
                             </a>
                             <div class="inner">
                                 <a href="#">
-                                    <h5 class="mb0">{{css.title}}</h5>
+                                    <h5 class="mb0"><a href="{{site.baseurl}}{{css.url}}">{{css.title}}</a></h5>
                                     <span class="inline-block mb16">September 23, 2015</span>
                                 </a>
                                 <hr>
                                 <p>{{css.meta}} </p>
-                                <a class="btn btn-sm" href="#">Read More</a>
+                                <a class="btn btn-sm" href="{{site.baseurl}}{{css.url}}">Read More</a>
                                 <ul class="tags pull-right">
                                     <li>
                                         <a class="btn btn-sm btn-icon" href="#">
@@ -67,7 +67,7 @@ layout: default
                                 <li class="mb40 mb-xs-24">
                                     <div class="overflow-hidden mb32">
                                         <div class="col-sm-4">
-                                            <h4 class="uppercase pt8"><a href="#">{{html.title}}</a></h4>
+                                            <h4 class="uppercase pt8"><a href="{{site.baseurl}}{{html.url}}">{{html.title}}</a></h4>
                                         </div>
                                         <div class="col-sm-4">
                                             <h6 class="uppercase mb0">{{html.author}}</h6>
@@ -75,7 +75,7 @@ layout: default
                                         </div>
                                     
                                         <div class="col-sm-4 text-right">
-                                            <a class="btn btn-sm btn-white mt8" href="#">Get Tickets</a>
+                                            <a class="btn btn-sm btn-white mt8" href="{{site.baseurl}}{{html.url}}">Get Tickets</a>
                                         </div>
                                     </div>
                                     <hr class="fade-half mb0">

@@ -1,10 +1,10 @@
 ---
 layout: news-article
-title:  codepen
+title:  HTML code
 meta: Opis
-author: Jekyll Smit
-date:   2015-09-10 18:07:54
+date:   2015-09-10
 categories: html
+image: cover13.jpg
 ---
 You’ll find this post in your  directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run , which launches a web server and auto-regenerates your site when a file is updated.
 

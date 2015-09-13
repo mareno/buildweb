@@ -1,8 +1,11 @@
 ---
 layout: news-article
-title:  CODEPEN
+title:  html-5
 meta: Opis
-date:   2015-09-10 
+image: app2.jpg
+bghead-image: placey2.jpg
+author: Briana Visee
+date:   2015-09-10
 categories: html
 ---
 You’ll find this post in your  directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run , which launches a web server and auto-regenerates your site when a file is updated.

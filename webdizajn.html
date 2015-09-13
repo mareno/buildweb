@@ -13,11 +13,11 @@ layout: news
                          {% for html in site.categories.html %}
                         <div class="col-sm-4 post-snippet masonry-item">
                             <a href="#">
-                                <img alt="Post Image" src="{{site.baseurl}}/img/blog-single-3.jpg" />
+                                <img alt="Post Image" src="{{site.baseurl}}/img/{{html.image}}" />
                             </a>
                             <div class="inner">
-                                <a href="#">
-                                    <h5 class="mb0"><h5><a href="{{site.baseurl}}{{html.url}}">{{html.title}}</a></h5>
+                               <a href="{{site.baseurl}}{{html.url}}">
+                                    <h5 class="mb0">{{html.title}}</h5>
                                     <span class="inline-block mb16">{{html.date}}</span>
                                 </a>
                                 <hr>

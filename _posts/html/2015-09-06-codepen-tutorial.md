@@ -1,7 +1,9 @@
 ---
 layout: news-article
-title:  HTML Structure
+title:  codepen
 meta: Opis
+image: app1.jpg
+author: Jekyll Smit
 date:   2015-09-10 
 categories: html
 ---
