@@ -3,7 +3,7 @@ layout: news-article
 title:  "Welcome to CSS!"
 meta: Opis
 date:   2015-09-10
-image: app3.jpg
+image: burns2.jpg
 categories: css
 ---
 You’ll find this post in your  directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run , which launches a web server and auto-regenerates your site when a file is updated.

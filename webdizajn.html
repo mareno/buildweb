@@ -1,5 +1,6 @@
 ---
 layout: news
+title: Alati za web dizajnere
 ---
 
 <section class="bg-secondary">
@@ -12,7 +13,7 @@ layout: news
                     <div class="row masonry masonryFlyIn mb40">
                          {% for html in site.categories.html %}
                         <div class="col-sm-4 post-snippet masonry-item">
-                            <a href="#">
+                            <a href="{{site.baseurl}}{{html.url}}">
                                 <img alt="Post Image" src="{{site.baseurl}}/img/{{html.image}}" />
                             </a>
                             <div class="inner">

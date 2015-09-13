@@ -17,3 +17,17 @@
   {% endfor %}
  {% endif %}
 </ol>
+
+Post Feature
+
+{% if include.featured == true and product.featured == true %}
+      {% assign test = true %}
+{% endif %}
+
+{% if include.featured == false and product.featured == false %}
+      {% assign test = true %}
+{% endif %}
+
+{% if test %}
+      Yepeeee!
+{% endif %}
