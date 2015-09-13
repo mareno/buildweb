@@ -2,6 +2,7 @@
 layout: news-article
 title:  html-5
 meta: Opis
+h1: semantic html structure
 author: Visee Briana Visee
 image: home3.jpg
 bghead-image: burns3.jpg

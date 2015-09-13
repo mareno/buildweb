@@ -1,6 +1,7 @@
 ---
 layout: news-article
 title:  html-5
+h1: You can rebuild the site in many different ways
 meta: Opis
 image: app2.jpg
 bghead-image: placey2.jpg

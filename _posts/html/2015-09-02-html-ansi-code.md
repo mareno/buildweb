@@ -2,6 +2,7 @@
 layout: news-article
 title:  HTML code
 meta: Opis
+h1: You’ll find this post in your  directory
 date:   2015-09-10
 categories: html
 image: cover13.jpg

@@ -2,6 +2,7 @@
 layout: news-article
 title:  codepen
 meta: Opis
+h1: code pen kratki tutorijal
 image: app1.jpg
 bghead-image: cover9.jpg
 author: Jekyll Smit
