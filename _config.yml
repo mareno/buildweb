@@ -1,4 +1,4 @@
-markdown: redcarpet
+kramdown: redcarpet
 baseurl: /buildweb
 exclude: ['README.md' , 'fileexample.html']
 permalink: pretty
