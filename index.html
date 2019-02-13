@@ -14,19 +14,14 @@ layout: default
                         <a class="btn-lg btn" href="#">Explore webbuild</a>
                     </div>
                 </div>
-                
+
             </section>
 <section class="bg-secondary">
                 <div class="container">
                 <h2>Category page/post show limit:3</h2>
-                    <div class="row masonry-loader">
-                        <div class="col-sm-12 text-center">
-                            <div class="spinner"></div>
-                        </div>
-                    </div>
-                    <div class="row masonry masonryFlyIn mb40">
-                         {% for css in site.categories.css limit:3 %}
-                        <div class="col-sm-4 post-snippet masonry-item">
+                    <div class="row mb40">
+                         {% for css in site.categories.css limit:4 %}
+                        <div class="col-lg-3 col-sm-6 col-xs-6">
                             <a href="{{site.baseurl}}{{css.url}}">
                                 <img alt="Post Image" src="{{site.baseurl}}/img/{{css.image}}" />
                             </a>
