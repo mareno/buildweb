@@ -14,19 +14,15 @@ layout: default
                         <a class="btn-lg btn" href="#">Explore webbuild</a>
                     </div>
                 </div>
-                
+
             </section>
 <section class="bg-secondary">
                 <div class="container">
-                <h2>Category page/post show limit:3</h2>
-                    <div class="row masonry-loader">
-                        <div class="col-sm-12 text-center">
-                            <div class="spinner"></div>
-                        </div>
-                    </div>
-                    <div class="row masonry masonryFlyIn mb40">
+                <h2>Category page/post show limit:4</h2>
+
+                    <div class="row mb40">
                          {% for css in site.categories.css limit:3 %}
-                        <div class="col-sm-4 post-snippet masonry-item">
+                        <div class="col-lg-3 col-sm-4 col-xs-6">
                             <a href="{{site.baseurl}}{{css.url}}">
                                 <img alt="Post Image" src="{{site.baseurl}}/img/{{css.image}}" />
                             </a>
@@ -63,7 +59,7 @@ layout: default
                     <h2 class="mb40 mb-xs-24 text-center">List of Igor posts on Soundcloud</h2>
                         <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0">
                             <h2 class="uppercase mb40 mb-xs-24 text-center">Category /CSS/</h2>
-                            <hr class="mb40 mb-xs-24 fade-half">                  
+                            <hr class="mb40 mb-xs-24 fade-half">
                             <ul>
                             {% for html in site.categories.html limit:3 %}
                                 <li class="mb40 mb-xs-24">
@@ -75,7 +71,7 @@ layout: default
                                             <h6 class="uppercase mb0">{{html.author}}</h6>
                                             <span>Rod Laver Arena</span>
                                         </div>
-                                    
+
                                         <div class="col-sm-4 text-right">
                                             <a class="btn btn-sm btn-white mt8" href="{{site.baseurl}}{{html.url}}">Get Tickets</a>
                                         </div>
@@ -85,17 +81,17 @@ layout: default
                                 {% endfor %}
                             </ul>
                         </div>
-                        
+
                         <div class="col-md-6 col-sm-10 col-sm-offset-1 col-md-offset-0">
                             <h2 class="uppercase mb40 mb-xs-24 text-center">Hear Us</h2>
                             <hr class="mb40 mb-xs-24 fade-half">
-                           
+
                         <img alt="image" class="background-image" src="img/small2.jpg">
-              
+
                         </div>
                     </div><!--end of row-->
                 </div><!--end of container-->
-            </section>                  
+            </section>
            <section class="bg-secondary">
                 <div class="container">
                     <div class="row v-align-children">
@@ -111,9 +107,9 @@ layout: default
                             </p>
                         </div>
                     </div>
-                    
+
                 </div>
-                
+
             </section>
             <section class="bg-secondary">
                 <div class="container">
@@ -129,6 +125,6 @@ layout: default
                             </div>
                 </div>
                     </div>
-                        
-                
+
+
             </section>
