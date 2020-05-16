@@ -32,8 +32,7 @@ twitter_username: mareno_dizajn
 github_username:  mareno
 
 # Build settings
-plugins:
-  - jekyll-seo-tag
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
